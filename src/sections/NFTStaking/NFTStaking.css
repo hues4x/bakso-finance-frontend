@@ -1,0 +1,67 @@
+section.buybaksoswap {
+  background-color: #fff2bd;
+  padding: 3rem 0;
+}
+
+.buybaksoswap h3 {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: var(--montseerat);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.8em;
+}
+
+.buybaksoswap h3 span {
+  font-weight: 700;
+}
+
+.nftTitle p {
+  font-size: 1rem;
+  font-family: var(--montseerat);
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-gap: 3rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.item .count {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.count p {
+  color: white;
+}
+
+.item p {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: var(--montseerat);
+}
+
+@media (min-width: 576px) {
+  .buybaksoswap h3 {
+    text-align: start;
+    font-size: 1.5rem;
+  }
+  .nftTitle p {
+    font-size: 1.4rem;
+  }
+}

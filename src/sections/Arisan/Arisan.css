@@ -1,0 +1,109 @@
+section.arisan {
+  background-color: var(--optional-color);
+  padding: 4rem 0;
+}
+
+section.arisan .container {
+  position: relative;
+}
+
+img.simpleImg {
+  position: absolute;
+  left: 0rem;
+  top: -2rem;
+  width: 10rem;
+  display: none;
+}
+
+.arisan_title {
+  background-color: #ffcc00;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+.arisan_title h1 {
+  margin-bottom: 0;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--montseerat);
+}
+
+.arisan_text p {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.arisan_text {
+  margin-bottom: 5rem;
+}
+
+.arisan_card_deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 6rem;
+  justify-content: center;
+}
+
+.arisan_card {
+  background-color: var(--primary-color);
+  padding: 3rem 2rem;
+  border-radius: 18px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.arisan_card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.arisan_card::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  background-color: red;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -4rem;
+  left: 45%;
+}
+
+.arisan_card img {
+  width: 4rem;
+}
+.arisan_card h3 {
+  color: var(--optional-color);
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.arisan_card p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  text-justify: inter-word;
+}
+
+@media (min-width: 1200px) {
+  .arisan_card_deck {
+    grid-gap: 2rem;
+  }
+
+  img.simpleImg {
+    display: block;
+  }
+
+  .arisan_card::before {
+    left: 2rem;
+  }
+}

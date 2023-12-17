@@ -1,0 +1,45 @@
+section.about {
+  background-image: linear-gradient(#ffe57b, #ffffff);
+  padding: 2rem 0;
+}
+
+@media (min-width: 992px) {
+  section.about {
+    padding: 5rem 0;
+    padding-top: 8rem;
+  }
+  .about p {
+    font-size: 1.5rem !important;
+  }
+
+  .about h1 {
+    font-size: 4rem !important;
+  }
+}
+.about h1 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--alatsi);
+  margin-bottom: 2rem;
+}
+
+.about p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: var(--popins);
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+a.primaryBtn.about {
+  font-size: 1.5rem !important;
+  padding: 0.8rem 3rem;
+  border: 2px solid #f9e11c;
+}
+
+.about p span {
+  border-bottom: 2px solid var(--primary-color);
+}
